@@ -19,9 +19,7 @@ jobs:
         go-version: 1.17
 
     - name: Build
-      run: go build -v server.go
-           go build -v ./RESTapi/main.go
+      run: go build -v server.go && go build -v ./RESTapi/main.go
 
     - name: Test
-      run: go test -v  server.go
-           go test -v ./RESTapi/main.go
+      run: go test -v  server.go && go test -v ./RESTapi/main.go
