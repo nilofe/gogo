@@ -20,8 +20,8 @@ jobs:
 
     - name: Build
       run: go build -v server.go
-           go build -v ./RESTapi
+           go build -v ./RESTapi/main.go
 
     - name: Test
       run: go test -v  server.go
-           go test -v ./RESTapi
+           go test -v ./RESTapi/main.go
